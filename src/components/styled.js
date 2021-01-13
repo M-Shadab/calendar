@@ -16,6 +16,7 @@ export const RoundedAppBar = styled(AppBar)({
 
 export const StyledContainer = styled(Container)({
   paddingTop: "16px",
+  maxWidth: ({ maxWidth }) => (maxWidth ? maxWidth : "90vw"),
 })
 
 export const StyledPaper = styled(Paper)({

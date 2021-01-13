@@ -16,9 +16,10 @@ const Month = ({ value }) => {
     <>
       <DaysHeader />
       {calendar.map((week, rowIndex) => (
-        <Grid container>
+        <Grid container key={rowIndex}>
           {week.map((dayObject, index) => (
             <DayCard
+              key={index}
               dayObject={dayObject}
               row={
                 rowIndex % 2 === 0

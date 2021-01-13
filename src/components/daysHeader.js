@@ -10,11 +10,12 @@ const daysName = [
   "FRIDAY",
   "SATURDAY",
 ]
+
 const DaysHeader = () => {
   return (
     <Grid container item>
-      {daysName.map((day) => (
-        <Grid item xs>
+      {daysName.map((day, index) => (
+        <Grid item xs key={index}>
           <Box
             component="p"
             align="center"
